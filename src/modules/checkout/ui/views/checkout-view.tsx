@@ -14,7 +14,7 @@ import { useRouter } from 'next/navigation'
 interface CheckoutViewProps {
   tenantSlug: string
 }
-
+export const dynamic  = "force-dynamic";
 export const CheckoutView = ({ tenantSlug }: CheckoutViewProps) => {
   const router = useRouter()
   const [states, setStates] = useCheckoutStates()
